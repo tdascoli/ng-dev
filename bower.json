@@ -1,0 +1,31 @@
+{
+  "name": "ng-dev",
+  "version": "0.0.1",
+  "ignore": [
+    ".idea",
+    "demo",
+    "lib",
+    "node_modules",
+    "src",
+    "test",
+    ".bowerrc",
+    ".gitignore",
+    ".jshintignore",
+    ".jshintrc",
+    "ng-dev.iml",
+    "bower.json",
+    "Gruntfile.js",
+    "package.json",
+    "README.md"
+  ],
+  "dependencies": {
+    "angular":"latest",
+    "angular-route":"latest",
+    "bootstrap":"latest",
+    "jquery": "2.1.1",
+    "jasmine": "latest",
+    "underscore": "~1.4.4",
+    "requirejs": "latest",
+    "ng-placeholders": "0.0.3-SNAPSHOT"
+  }
+}
