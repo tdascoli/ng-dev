@@ -3,8 +3,8 @@
 (function(){
     var as = angular.module('dev', ['ng-dev', 'ngRoute']);
 
-    as.controller("TestCtrl", function() {
-
+    as.controller("TestCtrl", function($scope) {
+        $scope.test="test";
     });
 
 
@@ -15,8 +15,8 @@
 
     as.config(function (hljsServiceProvider) {
         hljsServiceProvider.setOptions({
-            // replace tab with 4 spaces
-            tabReplace: '    '
+            // replace tab with 2 spaces
+            tabReplace: '  '
         });
     });
 
