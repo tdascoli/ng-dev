@@ -3,6 +3,7 @@
     'use strict';
 
     var module = angular.module('ng-dev', []);
+
         // hljs
     module.provider('hljsService', function () {
             var _hljsOptions = {};
