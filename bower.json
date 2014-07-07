@@ -1,5 +1,5 @@
 {
-  "name": "ng-dev",
+  "name": "bower register ng-dev git://github.com/tdascoli/ng-dev.git",
   "version": "0.0.1",
   "ignore": [
     ".idea",
@@ -16,17 +16,36 @@
     "bower.json",
     "Gruntfile.js",
     "package.json",
-    "README.md"
+    "README.md",
+    "**/.*",
+    "bower_components",
+    "tests"
   ],
   "dependencies": {
-    "angular":"latest",
-    "angular-route":"latest",
-    "bootstrap":"latest",
+    "angular": "latest",
+    "angular-route": "latest",
+    "bootstrap": "latest",
     "highlightjs": "latest",
     "jquery": "2.1.1",
     "jasmine": "latest",
     "underscore": "~1.4.4",
-    "requirejs": "latest",
-    "ng-placeholders": "0.0.3-SNAPSHOT"
-  }
+    "requirejs": "latest"
+  },
+  "homepage": "https://github.com/tdascoli/ng-dev",
+  "authors": [
+    "Thomas D'Ascoli <thomas@dasco.li>"
+  ],
+  "description": "ng dev components",
+  "main": "?",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "ng",
+    "dev",
+    "components",
+    "placeholder",
+    "highlight"
+  ],
+  "license": "MIT"
 }

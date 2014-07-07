@@ -11,7 +11,7 @@
             banner: '/* ' +
                 '<%= pkg.title || pkg.name %> - <%= pkg.version %> - ' +
                 '<%= grunt.template.today("yyyy-mm-dd") %> - ' +
-                'Copyright (c) <%= grunt.template.today("yyyy") %> dasco.li; */\n',
+                'Copyright (c) <%= grunt.template.today("yyyy") %> tdascoli; */\n',
 
             // Task configurations.
             clean: {
@@ -30,9 +30,17 @@
                             expand: true,
                             flatten: true,
                             src: [
-                                'src/js/ng-dev.js',
-                                'src/css/ng-dev.css'],
+                                'src/js/ng-dev.js'],
                             dest: 'dist',
+                            filter: 'isFile'
+                        },
+                        {
+                            expand: true,
+                            flatten: true,
+                            src: [
+                                'src/css/ng-dev.css',
+                                'src/css/github.css'],
+                            dest: 'dist/css/',
                             filter: 'isFile'
                         }
                     ]
@@ -56,7 +64,7 @@
                 },
                 ngdev: {
                     files: {
-                        'dist/alv-ch-ng.i18n.min.js': ['src/js/ng-dev.js']
+                        'dist/ng-dev.min.js': ['src/js/ng-dev.js']
                     }
                 }
             },
@@ -212,7 +220,7 @@
         grunt.registerTask('releaseMajor', ['jshint', 'clean:all', 'uglify', 'copy', 'less', 'push:major']);
 
         // Default task.
-        grunt.registerTask('default', ['jshint', 'clean:all', 'unit-test', 'copy', 'cssmin', 'uglify', 'compress']);
+        grunt.registerTask('default', ['clean:all', 'copy', 'cssmin', 'uglify', 'compress']);
     };
 
 

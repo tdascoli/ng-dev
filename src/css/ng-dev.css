@@ -28,7 +28,7 @@
 .model {
     margin-left: 0;
     margin-right: 0;
-    background-color: #fff;
+    background-color: #f7f7f9;
     border-width: 1px;
     border-color: #ddd;
     border-radius: 0px 0px 4px 4px;
@@ -93,6 +93,14 @@
     position: absolute;
     top: 15px;
     left: 15px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #bbb;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.highlight:before {
+    content: "Code";
     font-size: 12px;
     font-weight: 700;
     color: #bbb;
